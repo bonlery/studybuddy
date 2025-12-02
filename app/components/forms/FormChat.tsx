@@ -2,7 +2,7 @@ export default function FormChat() {
   return (
     <form
       data-loading="false"
-      className="flex flex-col gap-5 p-2 border border-white rounded"
+      className="flex flex-col gap-5 p-4 border border-white rounded"
     >
       <div className="">
         <textarea
