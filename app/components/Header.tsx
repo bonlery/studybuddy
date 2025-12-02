@@ -12,7 +12,7 @@ export default function Header() {
           <Link href="/login" className="button button--transparent-border">
             Login
           </Link>
-          <Link href="/register" className="button button--default">
+          <Link href="/signup" className="button button--default">
             Sign Up
           </Link>
         </div>

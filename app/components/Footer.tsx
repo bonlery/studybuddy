@@ -7,7 +7,7 @@ export default function Footer() {
       <h2>
         Challenge/Solution from
         <span className="text-[var(--default)]"> CodeCraft</span> | Created by
-        <span className="text-[var(--default)]">Vonlery Villanueva</span>
+        <span className="text-[var(--default)]"> Vonlery Villanueva</span>
       </h2>
     </footer>
   );
