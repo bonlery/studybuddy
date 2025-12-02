@@ -5,7 +5,7 @@ import Default from "./templates/Default";
 export default function Home() {
   return (
     <Default>
-      <h1>Home</h1>
+      <h1>Hello madlang peoplee</h1>
     </Default>
   );
 }
