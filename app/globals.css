@@ -40,3 +40,6 @@ body {
     @apply bg-transparent border border-(--default)  text-[var(--default)] hover:text-[var(--foreground)]  hover:bg-[var(--active)]  hover:border-(--active);
   }
 }
+
+[data=loading="true"] {
+}
