@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Header from "../components/Header";
 
-export default function Login() {
+export default function Signup() {
   return (
-    <section>
+    <section className="">
       <Header></Header>
-      <h1>login</h1>
+      signup
     </section>
   );
 }

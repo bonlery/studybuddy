@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Header from "./components/Header";
+import Default from "./templates/Default";
 
 export default function Home() {
   return (
-    <div className="">
+    <Default>
       <h1>Home</h1>
-      <Link href="/login">Login</Link>
-    </div>
+    </Default>
   );
 }

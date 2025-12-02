@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fffafb;
+  --foreground: #131515;
+  --text: #2b2c29;
+  --default: #339989;
+  --active: #7de2d1;
 }
 
 @theme inline {
@@ -14,13 +17,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #131515;
+    --foreground: #fffafb;
+    --default: #7de2d1;
+    --active: #339989;
   }
 }
 
 body {
+  box-sizing: border-box;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  @apply flex items-center justify-center px-5 py-2 transition rounded;
+  &.button--default {
+    @apply bg-(--default) text-[var(--background)] hover:text-[var(--foreground)]  hover:bg-[var(--active)];
+  }
+  &.button--transparent-border {
+    @apply bg-transparent border border-(--default)  text-[var(--default)] hover:text-[var(--foreground)]  hover:bg-[var(--active)]  hover:border-(--active);
+  }
 }
