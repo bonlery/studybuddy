@@ -12,7 +12,7 @@ export async function POST(req: Request) {
   const lastUserMessage = messages[messages.length - 1]?.content ?? "";
 
   //AI
-  let ragContent = "";
+  const ragContent = "";
 
   if (session) {
     //nope
