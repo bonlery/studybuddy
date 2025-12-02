@@ -5,7 +5,7 @@ export default function Default({
   className,
   children,
 }: {
-  className?: String;
+  className?: string;
   children: React.ReactNode;
 }) {
   return (
