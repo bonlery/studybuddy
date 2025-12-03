@@ -19,7 +19,7 @@ export default function Home() {
         <div className="justify-center items-center panel background-panel basis-[60%]">
           <div className="flex flex-col w-[35.5rem] gap-6">
             <h1 className=" text-4xl font-bold tracking-wide">Hello Guest!</h1>
-            <p className="lg:text-blue-600">
+            <p className="">
               Meet Study Buddy — your brainy sidekick! Upload your notes, and
               watch me turn them into instant A+ guidance. Free, friendly, and
               powered by AI—let’s ace this together!
