@@ -26,7 +26,8 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-hot-toast": "^2.6.0",
-    "react-markdown": "^10.1.0"
+    "react-markdown": "^10.1.0",
+    "vercel": "^48.12.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
