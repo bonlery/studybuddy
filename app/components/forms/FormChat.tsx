@@ -97,7 +97,7 @@ export default function FormChat({ setIsChatting, className }: FormChatProps) {
                   return (
                     <div
                       key={`${message.id}-${i}`}
-                      className="flex flex-col items-center p-3 bg-[var(--default)] rounded-md text-[var(--background)]"
+                      className="flex flex-col items-center p-3 bg-[var(--default)] rounded-md text-[var(--background)] text-wrap"
                     >
                       <div className="[&>p]:mb-3 [&>p]:last:mb-0 [&>ul]:mb-4 [&>ul>li]:list-disc [&>ul>li]:ml-5 [&>ol>li]:list-decimal [&>ol>li]:ml-5">
                         <ReactMarkdown>{part.text}</ReactMarkdown>
@@ -122,7 +122,7 @@ export default function FormChat({ setIsChatting, className }: FormChatProps) {
           <textarea
             name="message"
             placeholder="What do you want to know?"
-            className="w-full p-2 resize-none focus:border-none focus:outline-none  active:border-none"
+            className="w-full p-2 resize-none focus:border-none focus:outline-none  active:border-none  custom-scroll"
             onKeyDown={handleKeyDown}
             value={input}
             onChange={(e) => setInput(e.currentTarget.value)}
