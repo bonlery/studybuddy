@@ -5,6 +5,7 @@ import FormChat from "./components/forms/FormChat";
 import Logo from "./components/Logo";
 
 export default function Home() {
+  // push
   return (
     <>
       <Logo className=" absolute text-[var(--background)] my-8 mx-12" />
