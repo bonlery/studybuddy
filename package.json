@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:generate": "dontenv -e .env.local -- prisma generate",
+    "db:migrate": "dontenv -e .env.local -- prisma migrate dev",
+    "db:studio": "dontenv -e .env.local -- prisma studio",
+    "db:reset": "dontenv -e .env.local -- prisma db push --force"
   },
   "dependencies": {
     "@ai-sdk/google": "^2.0.44",
@@ -26,6 +30,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.6",
+    "prisma": "^6.19.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

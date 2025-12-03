@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Header from "../components/Header";
+import Logo from "../components/Logo";
 
 export default function Login() {
   return (
-    <section>
-      <Header></Header>
-      <h1>login</h1>
-    </section>
+    <>
+      {/* <Logo className=" absolute text-[var(--background)] my-8 mx-12" /> */}
+    </>
   );
 }
