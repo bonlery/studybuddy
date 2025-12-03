@@ -1,11 +1,15 @@
 import Link from "next/link";
 import Header from "../components/Header";
-import Logo from "../components/Logo";
+import Bare from "../templates/Bare";
+import FormSignup from "../components/forms/FormSignup";
+import FormLogin from "../components/forms/FormLogin";
 
 export default function Login() {
   return (
     <>
-      {/* <Logo className=" absolute text-[var(--background)] my-8 mx-12" /> */}
+      <Bare className="w-screen flex flex-col justify-center items-center">
+        <FormLogin />
+      </Bare>
     </>
   );
 }

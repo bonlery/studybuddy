@@ -1,5 +1,6 @@
 import { Link } from "lucide-react";
 import Logo from "../components/Logo";
+import { Toaster } from "react-hot-toast";
 
 export default function Bare({
   className,
@@ -14,11 +15,7 @@ export default function Bare({
         <Logo></Logo>
       </header>
       <div className={`flex flex-1 ${className}`}>{children}</div>
-      <div className="flex flex-row items-center gap-2 w-[70%] self-center">
-        <hr className="flex-1 border-t text-[var(--foreground)]" />
-        <p>or</p>
-        <hr className="flex-1 border-t text-[var(--foreground)]" />
-      </div>
+      <Toaster position="bottom-right" />
     </div>
   );
 }

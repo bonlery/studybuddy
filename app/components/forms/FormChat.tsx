@@ -6,11 +6,10 @@ import { UserRound, Bot } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 
 type FormChatProps = {
-  setIsChatting: React.Dispatch<React.SetStateAction<boolean>>;
   className?: string;
 };
 
-export default function FormChat({ setIsChatting, className }: FormChatProps) {
+export default function FormChat({ className }: FormChatProps) {
   // AI SDK
   const { messages, sendMessage } = useChat({
     onError: (error) => {
@@ -46,8 +45,6 @@ export default function FormChat({ setIsChatting, className }: FormChatProps) {
     if (!input) return;
 
     try {
-      setIsChatting(true);
-
       setIsLoading(true);
       await sendMessage({ text: input });
       setInput("");
